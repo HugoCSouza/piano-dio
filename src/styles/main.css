@@ -60,7 +60,9 @@ header .column span{
     border-radius: 30px;
     background-color: #38363f;
     cursor: pointer;
+    border: 1px solid #fff;
     position: relative;
+    margin: 0 auto;
 }
 
 .check-keys input::before{
@@ -105,7 +107,7 @@ header .column span{
     
 }
 
-.piano-keys .white:active{
+.piano-keys .white.active{
     box-shadow: inset -5px 5px 20px rgba(0,0,0,0.2);
     background: linear-gradient(to bottom #fff 0%, #eee 100%);
 }
@@ -122,7 +124,7 @@ header .column span{
     
 }
 
-.piano-keys .black:active{
+.piano-keys .black.active{
     box-shadow: inset -5px 5px 20px rgba(255,255,255,0.2);
     background: linear-gradient(to bottom #000, #434343);
 }
@@ -132,7 +134,20 @@ header .column span{
     bottom: 20px;
     width: 100%;
     text-align: center;
-    font-size: 1.13rem;
-
-    
+    font-size: 1.13rem; 
 }
+
+.piano-keys .key.hide span{
+    display: none;
+}
+
+.check-keys span{
+    display: flex;
+    justify-content: center;
+}
+
+.check-keys{
+    text-align: center;
+}
+
+

@@ -1,16 +1,14 @@
 # 🚀 Jogo da memória
-Repositório para desenvolver um jogo da memória como desafio do bootcamp de jogos da [DIO](https://web.dio.me/home)
+Repositório para desenvolver um piano web como desafio do bootcamp de jogos da [DIO](https://web.dio.me/home)
 
 ## Objetivo
-Criar um jogo da memória Web 3x3 utilizando emojis.
-
-O jogo deve ser uma aplicação web divida entre:
+Criar um piano em aplicação web. A aplicação web divida entre:
 * HTML para fazer a marcação da página;
 * CSS para delimitar o estilo;
 * JavaScript para fazer a engine de funcionamento;
 
 Observações:
-* Caso você seja aluno e esteja seguindo passo a passo e tenha problema com a rotação dos cards, esse bug está corrigido no código e explicado no commit "correção do bug css e finalização".
+* Todo o código JavaScript foi comentando para auxiliar outros alunos que assim como eu estão fazendo o bootcamp.
 
 ## Resultado
 
