@@ -8,101 +8,131 @@
 body {
     font-family: 'Press Start 2P', cursive;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
-    background: #332f2f;
-    user-select: none;
+    background-color: #e3f2fb;
+    color: #fff;
 }
 
 /* Estilos do Contêiner Principal */
 
 .container {
-    position: relative;
+    width: 780px;
+    border: 1px solid blue;
+    border-radius: 20px;
+    padding: 35px 40px;
+    background-color: #000;
+
+}
+
+.container header{
+    color: #b2b2b2;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
-    background: linear-gradient(135deg,
-            rgba(9, 94, 121, 1) 0%,
-            rgba(4, 7, 191, 1) 26%,
-            rgba(125, 0, 255, 0.6235827664399093) 66%,
-            rgba(187, 0, 255, 1) 90%);
-    padding: 40px 60px;
+    justify-content: space-between;
 }
 
-/* Estilos para Títulos */
-
-h2 {
-    font-size: 3em;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+header h2{
+    font-size: 1.6rem;
 }
 
-/* Estilos para Botão de Reset */
+header .column{
+    display: flex;
+    align-items: center;
+}
 
-.reset {
-    width: 100%;
-    padding: 15px 20px;
-    color: #000;
-    background-color: #fff;
-    border: none;
-    font-size: 1.5em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+header .column span{
+    font-weight: 500;
+    margin-right: 15px;
+    font-size: 1.19rem;
+}
+
+.volumn input{
+    accent-color: #694949;
+}
+
+.check-keys input{
+    accent-color: #694949;
+    width: 60px;
+    height: 30px;
+    appearance: none;
+    border-radius: 30px;
+    background-color: #38363f;
     cursor: pointer;
-    font-weight: 600;
-}
-
-.reset:focus {
-    color: #e385a1;
-    background-color: #95e385;
-}
-
-/* Estilos para o Jogo */
-
-.game {
-    width: 430px;
-    height: 430px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    transform-style: preserve-3d;
-    perspective: 500px;
-}
-
-/* Estilos para Cartas */
-
-.card {
     position: relative;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e6ece5;
-    font-size: 3em;
-    transform: rotateY(360deg);
-    transition: 0.20s;
 }
 
-.card::after {
+.check-keys input::before{
     content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: inherit;
+    background-color: #6b6b64;
+    cursor: pointer;
     position: absolute;
-    inset: 0;
-    background: #404440;
-    transition: 0.9s;
-    transform: rotateY(0deg);
-    /* opacity: .9; */
-    backface-visibility: hidden;
+    top: 50%;
+    left: 0.3rem;
+    transform: translateY(-50%);
+    transition: all 0.15s ease;
 }
 
-.card.boxOpen {
-    transform: rotateY(180deg);
+.check-keys input:checked::before{
+    background-color: #fff;
+    left: 2.3rem;
 }
 
-/* .boxOpen::after, .boxMatch::after {
-    transform: rotateY(180deg);
-} */
+.piano-keys{
+    display: flex;
+    margin-top: 40px;
+}
+
+.piano-keys .key{
+    cursor: pointer;
+    list-style: none;
+    color: #6b6b64;
+    user-select: none;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.piano-keys .white{
+    width: 70px;
+    height: 230px;
+    border: 1px solid red;
+    background: linear-gradient(#fff 96%, #eee 4%);
+    border-radius: 8px;
+    
+}
+
+.piano-keys .white:active{
+    box-shadow: inset -5px 5px 20px rgba(0,0,0,0.2);
+    background: linear-gradient(to bottom #fff 0%, #eee 100%);
+}
+    
+
+.piano-keys .black{
+    width: 44px;
+    height: 140px;
+    border: 1px solid red;
+    background: linear-gradient(#131212, rgb(79, 83, 79));
+    border-radius: 0 0 5px 5px;
+    z-index: 2;
+    margin: 0 -22px 0 -22px;
+    
+}
+
+.piano-keys .black:active{
+    box-shadow: inset -5px 5px 20px rgba(255,255,255,0.2);
+    background: linear-gradient(to bottom #000, #434343);
+}
+
+.piano-keys span{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.13rem;
+
+    
+}

@@ -3,16 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da memória</title>
+    <title>Pianinho</title>
 
     <link rel="stylesheet" href="./src/styles/main.css">
 </head>
 <body>
     <!-- Div container ou main deixa esta como função de principal-->
     <div class="container">
-        <h2>Jogo da memória</h2>
-        <div class="game"></div>
-        <button class="reset" onclick = "window.location.reload()"> Reset</button>
+        <header>
+            <h2>Pianinho</h2>
+            <div class="volumn">
+                <span>Volume</span>
+                <input type="range">
+            </div>
+            <div class="check-keys">
+                <span>Teclas</span>
+                <input type="checkbox" name="" id="">
+            </div>
+
+        </header>
+        <ul class="piano-keys">
+            <li class="key white"><span>a</span></li>
+            <li class="key black"><span>w</span></li>
+            <li class="key white"><span>s</span></li>
+            <li class="key black"><span>e</span></li>
+            <li class="key white"><span>d</span></li>
+            <li class="key black"><span>f</span></li>
+            <li class="key white"><span>t</span></li>
+            <li class="key black"><span>g</span></li>
+            <li class="key white"><span>y</span></li>
+            <li class="key black"><span>h</span></li>
+            <li class="key white"><span>u</span></li>
+            <li class="key black"><span>j</span></li>
+            <li class="key white"><span>k</span></li>
+            <li class="key black"><span>o</span></li>
+            <li class="key white"><span>l</span></li>
+            <li class="key black"><span>p</span></li>
+            <li class="key white"><span>ç</span></li>
+        </ul>
         
     </div>
 
