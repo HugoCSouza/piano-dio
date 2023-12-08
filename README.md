@@ -12,7 +12,7 @@ Observações:
 
 ## Resultado
 
-Caso interesse ver em funcionamento, foi utilizado a ferramenta [GitHub Pages](https://hugocsouza.github.io/detona-ralph-game/).
+Caso interesse ver em funcionamento, foi utilizado a ferramenta [GitHub Pages](https://hugocsouza.github.io/piano-dio/).
 
 ### :white_check_mark: Status do Projeto
 
